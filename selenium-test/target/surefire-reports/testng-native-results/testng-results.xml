@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-16T00:32:57 IST" name="Surefire suite" finished-at="2024-10-16T00:33:04 IST" duration-ms="6671">
+    <groups>
+    </groups>
+    <test started-at="2024-10-16T00:32:57 IST" name="Surefire test" finished-at="2024-10-16T00:33:04 IST" duration-ms="6671">
+      <class name="BasicTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:BasicTest@5a4aa2f2]" started-at="2024-10-16T00:32:57 IST" name="setup" finished-at="2024-10-16T00:32:59 IST" duration-ms="1508" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testBrowserStackTitle()[pri:0, instance:BasicTest@5a4aa2f2]" started-at="2024-10-16T00:32:59 IST" name="testBrowserStackTitle" finished-at="2024-10-16T00:33:00 IST" duration-ms="1020" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowserStackTitle -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:BasicTest@5a4aa2f2]" started-at="2024-10-16T00:33:00 IST" name="teardown" finished-at="2024-10-16T00:33:00 IST" duration-ms="95" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- BasicTest -->
+      <class name="com.example.BrowserStackTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.BrowserStackTest@41ee392b]" started-at="2024-10-16T00:33:02 IST" name="setup" finished-at="2024-10-16T00:33:02 IST" duration-ms="782" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testBrowserStackTitle()[pri:0, instance:com.example.BrowserStackTest@41ee392b]" started-at="2024-10-16T00:33:02 IST" name="testBrowserStackTitle" finished-at="2024-10-16T00:33:04 IST" duration-ms="1277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowserStackTitle -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.example.BrowserStackTest@41ee392b]" started-at="2024-10-16T00:33:04 IST" name="teardown" finished-at="2024-10-16T00:33:04 IST" duration-ms="97" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.example.BrowserStackTest -->
+      <class name="LocalMultiBrowserTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:LocalMultiBrowserTest@2ea6137]" started-at="2024-10-16T00:33:00 IST" name="setup" finished-at="2024-10-16T00:33:00 IST" duration-ms="747" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testBrowserStackTitle()[pri:0, instance:LocalMultiBrowserTest@2ea6137]" started-at="2024-10-16T00:33:00 IST" name="testBrowserStackTitle" finished-at="2024-10-16T00:33:01 IST" duration-ms="1033" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowserStackTitle -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:LocalMultiBrowserTest@2ea6137]" started-at="2024-10-16T00:33:01 IST" name="teardown" finished-at="2024-10-16T00:33:02 IST" duration-ms="96" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- LocalMultiBrowserTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
