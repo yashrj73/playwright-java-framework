@@ -1,41 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-16T00:32:57 IST" name="Surefire suite" finished-at="2024-10-16T00:33:04 IST" duration-ms="6671">
+  <suite started-at="2024-10-16T01:13:09 IST" name="Surefire suite" finished-at="2024-10-16T01:13:15 IST" duration-ms="5397">
     <groups>
     </groups>
-    <test started-at="2024-10-16T00:32:57 IST" name="Surefire test" finished-at="2024-10-16T00:33:04 IST" duration-ms="6671">
+    <test started-at="2024-10-16T01:13:09 IST" name="Surefire test" finished-at="2024-10-16T01:13:15 IST" duration-ms="5397">
       <class name="BasicTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:BasicTest@5a4aa2f2]" started-at="2024-10-16T00:32:57 IST" name="setup" finished-at="2024-10-16T00:32:59 IST" duration-ms="1508" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:BasicTest@345965f2]" started-at="2024-10-16T01:13:09 IST" name="setup" finished-at="2024-10-16T01:13:11 IST" duration-ms="1510" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testBrowserStackTitle()[pri:0, instance:BasicTest@5a4aa2f2]" started-at="2024-10-16T00:32:59 IST" name="testBrowserStackTitle" finished-at="2024-10-16T00:33:00 IST" duration-ms="1020" status="PASS">
+        <test-method signature="testBrowserStackTitle()[pri:0, instance:BasicTest@345965f2]" started-at="2024-10-16T01:13:11 IST" name="testBrowserStackTitle" finished-at="2024-10-16T01:13:12 IST" duration-ms="1189" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBrowserStackTitle -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:BasicTest@5a4aa2f2]" started-at="2024-10-16T00:33:00 IST" name="teardown" finished-at="2024-10-16T00:33:00 IST" duration-ms="95" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:BasicTest@345965f2]" started-at="2024-10-16T01:13:12 IST" name="teardown" finished-at="2024-10-16T01:13:12 IST" duration-ms="92" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- BasicTest -->
-      <class name="com.example.BrowserStackTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.example.BrowserStackTest@41ee392b]" started-at="2024-10-16T00:33:02 IST" name="setup" finished-at="2024-10-16T00:33:02 IST" duration-ms="782" status="PASS">
+      <class name="RemoteDriverTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:RemoteDriverTest@57d5872c]" started-at="2024-10-16T01:13:15 IST" name="setup" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1729021395127" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
+
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testBrowserStackTitle()[pri:0, instance:com.example.BrowserStackTest@41ee392b]" started-at="2024-10-16T00:33:02 IST" name="testBrowserStackTitle" finished-at="2024-10-16T00:33:04 IST" duration-ms="1277" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBrowserStackTitle -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.example.BrowserStackTest@41ee392b]" started-at="2024-10-16T00:33:04 IST" name="teardown" finished-at="2024-10-16T00:33:04 IST" duration-ms="97" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:RemoteDriverTest@57d5872c]" started-at="2024-10-16T01:13:15 IST" name="teardown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1729021395130" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.example.BrowserStackTest -->
+        <test-method signature="testBrowserStackTitle()[pri:0, instance:RemoteDriverTest@57d5872c]" started-at="2024-10-16T01:13:15 IST" name="testBrowserStackTitle" finished-at="2024-10-16T01:13:15 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
+
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowserStackTitle -->
+      </class> <!-- RemoteDriverTest -->
       <class name="LocalMultiBrowserTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:LocalMultiBrowserTest@2ea6137]" started-at="2024-10-16T00:33:00 IST" name="setup" finished-at="2024-10-16T00:33:00 IST" duration-ms="747" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:LocalMultiBrowserTest@1e67a849]" started-at="2024-10-16T01:13:12 IST" name="setup" finished-at="2024-10-16T01:13:13 IST" duration-ms="770" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -46,11 +140,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testBrowserStackTitle()[pri:0, instance:LocalMultiBrowserTest@2ea6137]" started-at="2024-10-16T00:33:00 IST" name="testBrowserStackTitle" finished-at="2024-10-16T00:33:01 IST" duration-ms="1033" status="PASS">
+        <test-method signature="testBrowserStackTitle()[pri:0, instance:LocalMultiBrowserTest@1e67a849]" started-at="2024-10-16T01:13:13 IST" name="testBrowserStackTitle" finished-at="2024-10-16T01:13:15 IST" duration-ms="1730" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBrowserStackTitle -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:LocalMultiBrowserTest@2ea6137]" started-at="2024-10-16T00:33:01 IST" name="teardown" finished-at="2024-10-16T00:33:02 IST" duration-ms="96" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:LocalMultiBrowserTest@1e67a849]" started-at="2024-10-16T01:13:15 IST" name="teardown" finished-at="2024-10-16T01:13:15 IST" duration-ms="93" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

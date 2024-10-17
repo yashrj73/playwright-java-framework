@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-16T23:54:13 IST" name="LocalMultiBrowserTest" finished-at="2024-10-16T23:54:26 IST" duration-ms="12403">
+    <groups>
+    </groups>
+    <test started-at="2024-10-16T23:54:13 IST" name="Chrome Test" finished-at="2024-10-16T23:54:17 IST" duration-ms="3362">
+      <class name="LocalMultiBrowserTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:LocalMultiBrowserTest@60dcc9fe]" started-at="2024-10-16T23:54:13 IST" name="setup" finished-at="2024-10-16T23:54:15 IST" duration-ms="1861" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testBrowserStackTitle()[pri:0, instance:LocalMultiBrowserTest@60dcc9fe]" started-at="2024-10-16T23:54:15 IST" name="testBrowserStackTitle" finished-at="2024-10-16T23:54:16 IST" duration-ms="1382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowserStackTitle -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:LocalMultiBrowserTest@60dcc9fe]" started-at="2024-10-16T23:54:16 IST" name="teardown" finished-at="2024-10-16T23:54:17 IST" duration-ms="108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- LocalMultiBrowserTest -->
+    </test> <!-- Chrome Test -->
+    <test started-at="2024-10-16T23:54:13 IST" name="Firefox Test" finished-at="2024-10-16T23:54:17 IST" duration-ms="4013">
+      <class name="LocalMultiBrowserTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:LocalMultiBrowserTest@4b14c583]" started-at="2024-10-16T23:54:13 IST" name="setup" finished-at="2024-10-16T23:54:16 IST" duration-ms="2379" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testBrowserStackTitle()[pri:0, instance:LocalMultiBrowserTest@4b14c583]" started-at="2024-10-16T23:54:16 IST" name="testBrowserStackTitle" finished-at="2024-10-16T23:54:17 IST" duration-ms="1134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowserStackTitle -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:LocalMultiBrowserTest@4b14c583]" started-at="2024-10-16T23:54:17 IST" name="teardown" finished-at="2024-10-16T23:54:17 IST" duration-ms="489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- LocalMultiBrowserTest -->
+    </test> <!-- Firefox Test -->
+    <test started-at="2024-10-16T23:54:13 IST" name="Safari Test" finished-at="2024-10-16T23:54:26 IST" duration-ms="12403">
+      <class name="LocalMultiBrowserTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:LocalMultiBrowserTest@78e117e3]" started-at="2024-10-16T23:54:13 IST" name="setup" finished-at="2024-10-16T23:54:14 IST" duration-ms="1211" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[safari]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testBrowserStackTitle()[pri:0, instance:LocalMultiBrowserTest@78e117e3]" started-at="2024-10-16T23:54:14 IST" name="testBrowserStackTitle" finished-at="2024-10-16T23:54:16 IST" duration-ms="1138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBrowserStackTitle -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:LocalMultiBrowserTest@78e117e3]" started-at="2024-10-16T23:54:16 IST" name="teardown" finished-at="2024-10-16T23:54:26 IST" duration-ms="10038" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- LocalMultiBrowserTest -->
+    </test> <!-- Safari Test -->
+  </suite> <!-- LocalMultiBrowserTest -->
+</testng-results>

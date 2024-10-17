@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-passed">Surefire suite</span>
+              <span class="suite-name border-skipped">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">3 methods,  1 skipped,  2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods skipped suite-Surefire_suite"> (hide)</a> <!-- hide-methods skipped suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods skipped suite-Surefire_suite"> (show)</a> <!-- show-methods skipped suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Surefire_suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="RemoteDriverTest" class="method navigator-link" hash-for-method="testBrowserStackTitle">testBrowserStackTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Surefire_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -105,11 +119,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="LocalMultiBrowserTest" class="method navigator-link" hash-for-method="testBrowserStackTitle">testBrowserStackTitle</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.example.BrowserStackTest" class="method navigator-link" hash-for-method="testBrowserStackTitle">testBrowserStackTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -129,10 +138,10 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
-          <div class="suite-Surefire_suite-class-passed">
+          <div class="suite-Surefire_suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.example.BrowserStackTest</span>
+              <img src="skipped.png"/>
+              <span class="class-name">RemoteDriverTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -140,10 +149,16 @@
                   <a name="testBrowserStackTitle">
                   </a> <!-- testBrowserStackTitle -->
                   <span class="method-name">testBrowserStackTitle</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+Parameter &apos;browser&apos; is required by BeforeMethod on method setup but has not been marked @Optional or defined
+
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
+          </div> <!-- suite-Surefire_suite-class-skipped -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -187,7 +202,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;BasicTest&quot;/&gt;
       &lt;class name=&quot;LocalMultiBrowserTest&quot;/&gt;
-      &lt;class name=&quot;com.example.BrowserStackTest&quot;/&gt;
+      &lt;class name=&quot;RemoteDriverTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
 &lt;/suite&gt; &lt;!-- Surefire suite --&gt;
@@ -230,21 +245,21 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testBrowserStackTitle')
-data.setCell(0, 2, 'com.example.BrowserStackTest')
-data.setCell(0, 3, 1277);
+data.setCell(0, 2, 'LocalMultiBrowserTest')
+data.setCell(0, 3, 1730);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testBrowserStackTitle')
-data.setCell(1, 2, 'LocalMultiBrowserTest')
-data.setCell(1, 3, 1033);
+data.setCell(1, 2, 'BasicTest')
+data.setCell(1, 3, 1189);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testBrowserStackTitle')
-data.setCell(2, 2, 'BasicTest')
-data.setCell(2, 3, 1020);
+data.setCell(2, 2, 'RemoteDriverTest')
+data.setCell(2, 3, 0);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -277,42 +292,38 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testBrowserStackTitle</span>
-                <span class="method-start">1508 ms</span>
+                <span class="method-start">1511 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">2529 ms</span>
+                <span class="method-start">2701 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">LocalMultiBrowserTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">2625 ms</span>
+                <span class="method-start">2794 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testBrowserStackTitle</span>
-                <span class="method-start">3372 ms</span>
+                <span class="method-start">3564 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">4406 ms</span>
+                <span class="method-start">5294 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.example.BrowserStackTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">4503 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testBrowserStackTitle</span>
-                <span class="method-start">5289 ms</span>
-              </div> <!-- test-method -->
+              <div class="chronological-class-name">RemoteDriverTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">6566 ms</span>
+                <span class="method-start">5390 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testBrowserStackTitle</span>
+                <span class="method-start">5390 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

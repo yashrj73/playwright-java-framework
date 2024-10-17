@@ -1,21 +1,28 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Local Multi-Browser Test Suite">
+<suite name="LocalMultiBrowserTest" parallel="tests" thread-count="3">
+
     <test name="Chrome Test">
-        <parameter name="browser" value="chrome" />
+        <parameter name="browser" value="chrome"/>
+        <parameter name="runOnGrid" value="true"/>
         <classes>
-            <class name="com.example.LocalMultiBrowserTest" />
+            <class name="LocalMultiBrowserTest"/>
         </classes>
     </test>
+
     <test name="Firefox Test">
-        <parameter name="browser" value="firefox" />
+        <parameter name="browser" value="firefox"/>
+        <parameter name="runOnGrid" value="true"/>
         <classes>
-            <class name="com.example.LocalMultiBrowserTest" />
+            <class name="LocalMultiBrowserTest"/>
         </classes>
     </test>
+
     <test name="Safari Test">
-        <parameter name="browser" value="safari" />
+        <parameter name="browser" value="safari"/>
+        <parameter name="runOnGrid" value="true"/>
         <classes>
-            <class name="com.example.LocalMultiBrowserTest" />
+            <class name="LocalMultiBrowserTest"/>
         </classes>
     </test>
+
 </suite>

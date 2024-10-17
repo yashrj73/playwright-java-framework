@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="6.877" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="12.592" tests="3" errors="0" skipped="0" failures="0">
   <properties>
+    <property name="surefire.suiteXmlFiles" value="testng.xml"/>
     <property name="java.specification.version" value="23"/>
-    <property name="webdriver.chrome.driver" value="/usr/local/bin/chromedriver"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.class.path" value="/Users/yashrajshrivastava/technical-onboarding/selenium-java-framework-2/selenium-test/target/test-classes:/Users/yashrajshrivastava/technical-onboarding/selenium-java-framework-2/selenium-test/target/classes:/Users/yashrajshrivastava/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/yashrajshrivastava/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/yashrajshrivastava/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/yashrajshrivastava/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/yashrajshrivastava/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/yashrajshrivastava/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/yashrajshrivastava/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/yashrajshrivastava/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/yashrajshrivastava/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/yashrajshrivastava/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/yashrajshrivastava/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/yashrajshrivastava/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/yashrajshrivastava/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/yashrajshrivastava/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/yashrajshrivastava/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/yashrajshrivastava/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/yashrajshrivastava/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/yashrajshrivastava/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/yashrajshrivastava/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/yashrajshrivastava/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/yashrajshrivastava/.m2/repository/org/testng/testng/7.4.0/testng-7.4.0.jar:/Users/yashrajshrivastava/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/Users/yashrajshrivastava/.m2/repository/org/webjars/jquery/3.5.1/jquery-3.5.1.jar:/Users/yashrajshrivastava/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/yashrajshrivastava/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
     <property name="java.vm.vendor" value="Homebrew"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
     <property name="user.timezone" value="Asia/Kolkata"/>
-    <property name="suiteXmlFile" value="/Users/yashrajshrivastava/technical-onboarding/selenium-java-framework-2/selenium-test/testng.xml"/>
     <property name="os.name" value="Mac OS X"/>
     <property name="java.vm.specification.version" value="23"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/23/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/yashrajshrivastava/technical-onboarding/selenium-java-framework-2/selenium-test/target/surefire/surefirebooter-20241016003257310_3.jar /Users/yashrajshrivastava/technical-onboarding/selenium-java-framework-2/selenium-test/target/surefire 2024-10-16T00-32-57_264-jvmRun1 surefire-20241016003257310_1tmp surefire_0-20241016003257310_2tmp"/>
+    <property name="sun.java.command" value="/Users/yashrajshrivastava/technical-onboarding/selenium-java-framework-2/selenium-test/target/surefire/surefirebooter-20241016235413382_3.jar /Users/yashrajshrivastava/technical-onboarding/selenium-java-framework-2/selenium-test/target/surefire 2024-10-16T23-54-13_344-jvmRun1 surefire-20241016235413382_1tmp surefire_0-20241016235413382_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/yashrajshrivastava/technical-onboarding/selenium-java-framework-2/selenium-test/target/test-classes:/Users/yashrajshrivastava/technical-onboarding/selenium-java-framework-2/selenium-test/target/classes:/Users/yashrajshrivastava/.m2/repository/org/seleniumhq/selenium/selenium-java/3.141.59/selenium-java-3.141.59.jar:/Users/yashrajshrivastava/.m2/repository/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar:/Users/yashrajshrivastava/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.141.59/selenium-chrome-driver-3.141.59.jar:/Users/yashrajshrivastava/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.141.59/selenium-edge-driver-3.141.59.jar:/Users/yashrajshrivastava/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.141.59/selenium-firefox-driver-3.141.59.jar:/Users/yashrajshrivastava/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.141.59/selenium-ie-driver-3.141.59.jar:/Users/yashrajshrivastava/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.141.59/selenium-opera-driver-3.141.59.jar:/Users/yashrajshrivastava/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar:/Users/yashrajshrivastava/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.141.59/selenium-safari-driver-3.141.59.jar:/Users/yashrajshrivastava/.m2/repository/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar:/Users/yashrajshrivastava/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/yashrajshrivastava/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/yashrajshrivastava/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/yashrajshrivastava/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/yashrajshrivastava/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/yashrajshrivastava/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/yashrajshrivastava/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/yashrajshrivastava/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/yashrajshrivastava/.m2/repository/com/squareup/okhttp3/okhttp/3.11.0/okhttp-3.11.0.jar:/Users/yashrajshrivastava/.m2/repository/com/squareup/okio/okio/1.14.0/okio-1.14.0.jar:/Users/yashrajshrivastava/.m2/repository/org/testng/testng/7.4.0/testng-7.4.0.jar:/Users/yashrajshrivastava/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/Users/yashrajshrivastava/.m2/repository/org/webjars/jquery/3.5.1/jquery-3.5.1.jar:/Users/yashrajshrivastava/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/yashrajshrivastava/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/yashrajshrivastava/technical-onboarding/selenium-java-framework-2/selenium-test/target/surefire/surefirebooter-20241016003257310_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/yashrajshrivastava/technical-onboarding/selenium-java-framework-2/selenium-test/target/surefire/surefirebooter-20241016235413382_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="23"/>
     <property name="user.name" value="yashrajshrivastava"/>
@@ -58,34 +57,24 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="testBrowserStackTitle" classname="BasicTest" time="1.02">
-    <system-err><![CDATA[Starting ChromeDriver 129.0.6668.100 (cf58cba358d31ce285c1970a79a9411d0fb381a5-refs/branch-heads/6668@{#1704}) on port 36789
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully on port 36789.
-Oct 16, 2024 12:32:59 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-]]></system-err>
-  </testcase>
-  <testcase name="testBrowserStackTitle" classname="LocalMultiBrowserTest" time="1.033">
-    <system-out><![CDATA[==========Received Browser Parameter: chrome
+  <testcase name="testBrowserStackTitle" classname="LocalMultiBrowserTest" time="0.498">
+    <system-out><![CDATA[==========Received Browser Parameter: safari
+==========Received Browser Parameter: chrome
+==========Running on Grid: true
+==========Running on Grid: true
+==========Received Browser Parameter: firefox
+==========Running on Grid: true
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 129.0.6668.100 (cf58cba358d31ce285c1970a79a9411d0fb381a5-refs/branch-heads/6668@{#1704}) on port 44128
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully on port 44128.
-Oct 16, 2024 12:33:00 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+    <system-err><![CDATA[Oct 16, 2024 11:54:14 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Oct 16, 2024 11:54:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="testBrowserStackTitle" classname="com.example.BrowserStackTest" time="1.277">
-    <system-err><![CDATA[Starting ChromeDriver 129.0.6668.100 (cf58cba358d31ce285c1970a79a9411d0fb381a5-refs/branch-heads/6668@{#1704}) on port 14510
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully on port 14510.
-Oct 16, 2024 12:33:02 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+  <testcase name="testBrowserStackTitle" classname="LocalMultiBrowserTest" time="0.863">
+    <system-err><![CDATA[Oct 16, 2024 11:54:16 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="testApp on testApp(com.example.AppTest)" classname="com.example.AppTest" time="0.0"/>
+  <testcase name="testBrowserStackTitle" classname="LocalMultiBrowserTest" time="1.135"/>
 </testsuite>
