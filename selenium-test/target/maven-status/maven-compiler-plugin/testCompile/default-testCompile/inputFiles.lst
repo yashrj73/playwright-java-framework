@@ -1,4 +1,5 @@
 /Users/yashrajshrivastava/technical-onboarding/selenium-java-framework-2/selenium-test/src/test/java/com/example/AppTest.java
-/Users/yashrajshrivastava/technical-onboarding/selenium-java-framework-2/selenium-test/src/test/java/com/example/BasicTest.java
-/Users/yashrajshrivastava/technical-onboarding/selenium-java-framework-2/selenium-test/src/test/java/com/example/LocalMultiBrowserTest.java
-/Users/yashrajshrivastava/technical-onboarding/selenium-java-framework-2/selenium-test/src/test/java/com/example/RemoteDriverTest.java
+/Users/yashrajshrivastava/technical-onboarding/selenium-java-framework-2/selenium-test/src/test/java/com/example/BaseTest.java
+/Users/yashrajshrivastava/technical-onboarding/selenium-java-framework-2/selenium-test/src/test/java/com/example/BrowserStackRemoteTestNg.java
+/Users/yashrajshrivastava/technical-onboarding/selenium-java-framework-2/selenium-test/src/test/java/com/example/LocalMultiBrowserTestNg.java
+/Users/yashrajshrivastava/technical-onboarding/selenium-java-framework-2/selenium-test/src/test/java/com/example/LoginAndHomePageTest.java

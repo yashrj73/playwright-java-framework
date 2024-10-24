@@ -1,4 +1,5 @@
-LocalMultiBrowserTest.class
+LocalMultiBrowserTestNg.class
 com/example/AppTest.class
-BasicTest.class
-RemoteDriverTest.class
+BrowserStackRemoteTestNg.class
+LoginAndHomePageTest.class
+BaseTest.class

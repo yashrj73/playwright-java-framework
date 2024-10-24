@@ -3,13 +3,14 @@
 <suite name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="LocalMultiBrowserTest">
+      <class name="LocalMultiBrowserTestNg">
         <methods>
-          <include name="setup"/>
-          <include name="testBrowserStackTitle"/>
           <include name="teardown"/>
+          <include name="testLoginWithInvalidCredentials_Negative"/>
+          <include name="testLoginAndLaunchDashboard_Positive"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- LocalMultiBrowserTest -->
+      </class> <!-- LocalMultiBrowserTestNg -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->
