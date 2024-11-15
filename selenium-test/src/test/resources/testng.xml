@@ -13,8 +13,8 @@
                 <methods>
                     <include name="addItemToCart"/>
                     <include name="proceedToCheckout"/>
-                    <!--include name="loginAndPlaceOrder"/-->
-                    <!--include name="fillShippingAddress"/-->
+                    <include name="loginAndPlaceOrder"/>
+                    <include name="fillShippingAddress"/>
                 </methods>
             </class>
         </classes>
