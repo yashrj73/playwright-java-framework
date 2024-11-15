@@ -26,11 +26,6 @@ import java.net.URL;
 public class LocalGridBrowserNgTest {
 
     private WebDriver driver;
-    private static final String USERNAME = System.getenv("BROWSERSTACK_USERNAME");
-    private static final String ACCESS_KEY = System.getenv("BROWSERSTACK_ACCESS_KEY");
-    private static final String URL = "https://" + USERNAME + ":" + ACCESS_KEY + "@hub-cloud.browserstack.com/wd/hub";
-    private static final String WEBSITE_USERNAME = System.getenv("BROWSERSTACK_WEBSITE_USERNAME");
-    private static final String WEBSITE_PASSWORD = System.getenv("BROWSERSTACK_WEBSITE_PASSWORD");
 
     @BeforeMethod
     @Parameters({"browser", "runOnGrid"})
