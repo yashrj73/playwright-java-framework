@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="LocalGridBrowserSuite">
+    <!-- Suite-level properties for running the tests -->
+    <parameter name="browser" value="chrome"/>  <!-- You can change this to chrome, firefox, or safari -->
+    <parameter name="runOnGrid" value="true"/>   <!-- Set to true if running on grid, false if local -->
+
+    <test name="BrowserStack Test" preserve-order="true">
+        <!-- Defines which class to run -->
+        <classes>
+            <class name="com.example.LocalGridBrowserNgTest">
+                <!-- TestNG will pass these parameters to the test methods -->
+                <parameter name="browser" value="chrome"/>
+                <parameter name="runOnGrid" value="true"/>
+            </class>
+        </classes>
+    </test>
+</suite>
