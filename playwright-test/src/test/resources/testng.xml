@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Cross Browser Test Suite" parallel="tests" thread-count="6">
+    
+    <!-- BrowserStack Remote Tests -->
+    <test name="BrowserStack Chrome Test">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="browser_version" value="latest"/>
+        <parameter name="os" value="Windows"/>
+        <parameter name="os_version" value="10"/>
+        <classes>
+            <class name="com.example.BrowserStackRemoteNgTest">
+                <methods>
+                    <include name="addItemToCart"/>
+                    <include name="proceedToCheckout"/>
+                    <include name="loginAndPlaceOrder"/>
+                    <include name="fillShippingAddress"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="BrowserStack Firefox Test">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="browser_version" value="latest"/>
+        <parameter name="os" value="Windows"/>
+        <parameter name="os_version" value="10"/>
+        <classes>
+            <class name="com.example.BrowserStackRemoteNgTest">
+                <methods>
+                    <include name="addItemToCart"/>
+                    <include name="proceedToCheckout"/>
+                    <include name="loginAndPlaceOrder"/>
+                    <include name="fillShippingAddress"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="BrowserStack Safari Test">
+        <parameter name="browser" value="safari"/>
+        <parameter name="browser_version" value="latest"/>
+        <parameter name="os" value="OS X"/>
+        <parameter name="os_version" value="Monterey"/>
+        <classes>
+            <class name="com.example.BrowserStackRemoteNgTest">
+                <methods>
+                    <include name="addItemToCart"/>
+                    <include name="proceedToCheckout"/>
+                    <include name="loginAndPlaceOrder"/>
+                    <include name="fillShippingAddress"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Playwright Local Tests -->
+    <test name="Playwright Chromium Test">
+        <parameter name="browserType" value="chromium"/>
+        <classes>
+            <class name="com.example.PlaywrightBrowserNgTest">
+                <methods>
+                    <include name="addItemToCart"/>
+                    <include name="proceedToCheckout"/>
+                    <include name="loginAndPlaceOrder"/>
+                    <include name="fillShippingAddress"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Playwright Firefox Test">
+        <parameter name="browserType" value="firefox"/>
+        <classes>
+            <class name="com.example.PlaywrightBrowserNgTest">
+                <methods>
+                    <include name="addItemToCart"/>
+                    <include name="proceedToCheckout"/>
+                    <include name="loginAndPlaceOrder"/>
+                    <include name="fillShippingAddress"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Playwright WebKit Test">
+        <parameter name="browserType" value="webkit"/>
+        <classes>
+            <class name="com.example.PlaywrightBrowserNgTest">
+                <methods>
+                    <include name="addItemToCart"/>
+                    <include name="proceedToCheckout"/>
+                    <include name="loginAndPlaceOrder"/>
+                    <include name="fillShippingAddress"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Listeners for reporting -->
+    <listeners>
+        <listener class-name="org.testng.reporters.EmailableReporter"/>
+        <listener class-name="org.testng.reporters.XMLReporter"/>
+    </listeners>
+
+</suite>

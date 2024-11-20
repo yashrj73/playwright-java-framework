@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="BrowserStack and Local Multi-Browser Test Suite" parallel="tests" thread-count="3">
+
+    <!-- BrowserStack Remote Tests -->
+    <test name="BrowserStack Remote Tests">
+        <parameter name="browser" value="${browser}"/>
+        <parameter name="browser_version" value="${browser_version}"/>
+        <parameter name="os" value="${os}"/>
+        <parameter name="os_version" value="${os_version}"/>
+        <classes>
+            <class name="com.example.BrowserStackRemoteNgTest">
+                
+            </class>
+        </classes>
+    </test>
+
+    <!-- Local Grid Tests -->
+    <test name="Local Multi-Browser Tests">
+        <parameter name="browser" value="${browser}"/>
+        <parameter name="runOnGrid" value="true"/>
+        <classes>
+            <class name="com.example.LocalMultiBrowserTestNg">
+                <methods>
+                    <!-- Placeholder for multiple methods -->
+                    <include name="${method_names}"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <!-- Listeners for reporting -->
+    <listeners>
+        <listener class-name="org.testng.reporters.EmailableReporter"/>
+        <listener class-name="org.testng.reporters.XMLReporter"/>
+    </listeners>
+
+</suite>

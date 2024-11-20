@@ -1,0 +1,528 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta charset='utf-8'>
+<title>TestNG Report</title>
+<style type="text/css">
+table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}
+td,th {border:1px solid #009;padding:.25em .5em}
+.result th {vertical-align:bottom}
+.param th {padding-left:1em;padding-right:1em}
+.param td {padding-left:.5em;padding-right:2em}
+.stripe td,.stripe th {background-color: #E6EBF9}
+.numi,.numi_attn {text-align:right}
+.total td {font-weight:bold}
+.passedodd td {background-color: #0A0}
+.passedeven td {background-color: #3F3}
+.skippedodd td {background-color: #CCC}
+.skippedodd td {background-color: #DDD}
+.failedodd td,.numi_attn {background-color: #F33}
+.failedeven td,.stripe .numi_attn {background-color: #D00}
+.stacktrace {white-space:pre;font-family:monospace}
+.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="testOverview">
+<tr><th>Test</th><th>Methods<br/>Passed</th><th>Scenarios<br/>Passed</th><th># skipped</th><th># failed</th><th>Total<br/>Time</th><th>Included<br/>Groups</th><th>Excluded<br/>Groups</th></tr>
+<tr><th colspan="8">BrowserStack Test Suite</th></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t1">Chrome Test</a></td><td class="numi">2</td><td class="numi">2</td><td class="numi_attn">1</td><td class="numi_attn">1</td><td class="numi">15.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em"><a href="#t2">Safari Test</a></td><td class="numi">2</td><td class="numi">2</td><td class="numi_attn">1</td><td class="numi_attn">1</td><td class="numi">18.9 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t3">Firefox Test</a></td><td class="numi">2</td><td class="numi">2</td><td class="numi_attn">1</td><td class="numi_attn">1</td><td class="numi">32.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><th colspan="8">LocalGridBrowserSuite</th></tr>
+<tr><td style="text-align:left;padding-right:2em"><a href="#t4">BrowserStack Test</a></td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">4</td><td class="numi">0</td><td class="numi">0.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">6</td><td class="numi">6</td><td class="numi_attn">7</td><td class="numi_attn">3</td><td class="numi">32.4 seconds</td><td colspan="2">&nbsp;</td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="methodOverview" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="5">BrowserStack Test Suite</th></tr>
+<tr id="t1"><th colspan="5">Chrome Test &#8212; failed</th></tr>
+<tr class="failedodd"><td>com.example.BrowserStackRemoteNgTest</td><td><a href="#m1"><b>loginAndPlaceOrder</b>  </a></td><td class="numi">1</td><td>1732021563276</td><td class="numi">824</td></tr>
+<tr><th colspan="5">Chrome Test &#8212; skipped</th></tr>
+<tr class="skippedodd"><td>com.example.BrowserStackRemoteNgTest</td><td><a href="#m2"><b>fillShippingAddress</b>  </a></td><td class="numi">1</td><td>1732021564104</td><td class="numi">0</td></tr>
+<tr><th colspan="5">Chrome Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">com.example.BrowserStackRemoteNgTest</td><td><a href="#m3"><b>addItemToCart</b>  </a></td><td class="numi">1</td><td>1732021559324</td><td class="numi">3567</td></tr><tr class="passedodd"><td><a href="#m4"><b>proceedToCheckout</b>  </a></td><td class="numi">1</td><td>1732021562897</td><td class="numi">377</td></tr>
+<tr id="t2"><th colspan="5">Safari Test &#8212; failed</th></tr>
+<tr class="failedodd"><td>com.example.BrowserStackRemoteNgTest</td><td><a href="#m5"><b>loginAndPlaceOrder</b>  </a></td><td class="numi">1</td><td>1732021566448</td><td class="numi">818</td></tr>
+<tr><th colspan="5">Safari Test &#8212; skipped</th></tr>
+<tr class="skippedodd"><td>com.example.BrowserStackRemoteNgTest</td><td><a href="#m6"><b>fillShippingAddress</b>  </a></td><td class="numi">1</td><td>1732021567268</td><td class="numi">0</td></tr>
+<tr><th colspan="5">Safari Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">com.example.BrowserStackRemoteNgTest</td><td><a href="#m7"><b>addItemToCart</b>  </a></td><td class="numi">1</td><td>1732021558006</td><td class="numi">8136</td></tr><tr class="passedodd"><td><a href="#m8"><b>proceedToCheckout</b>  </a></td><td class="numi">1</td><td>1732021566143</td><td class="numi">305</td></tr>
+<tr id="t3"><th colspan="5">Firefox Test &#8212; failed</th></tr>
+<tr class="failedodd"><td>com.example.BrowserStackRemoteNgTest</td><td><a href="#m9"><b>loginAndPlaceOrder</b>  </a></td><td class="numi">1</td><td>1732021580201</td><td class="numi">769</td></tr>
+<tr><th colspan="5">Firefox Test &#8212; skipped</th></tr>
+<tr class="skippedodd"><td>com.example.BrowserStackRemoteNgTest</td><td><a href="#m10"><b>fillShippingAddress</b>  </a></td><td class="numi">1</td><td>1732021580972</td><td class="numi">0</td></tr>
+<tr><th colspan="5">Firefox Test &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="2">com.example.BrowserStackRemoteNgTest</td><td><a href="#m11"><b>proceedToCheckout</b>  </a></td><td class="numi">1</td><td>1732021579706</td><td class="numi">493</td></tr><tr class="passedodd"><td><a href="#m12"><b>addItemToCart</b>  </a></td><td class="numi">1</td><td>1732021571170</td><td class="numi">8534</td></tr>
+<tr><th colspan="5">LocalGridBrowserSuite</th></tr>
+<tr id="t4"><th colspan="5">BrowserStack Test &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="4">com.example.LocalGridBrowserNgTest</td><td><a href="#m13"><b>setup</b>  </a></td><td class="numi">1</td><td>1732021582355</td><td class="numi">36</td></tr><tr class="failedodd"><td><a href="#m14"><b>setup</b>  </a></td><td class="numi">1</td><td>1732021582355</td><td class="numi">36</td></tr><tr class="failedodd"><td><a href="#m15"><b>setup</b>  </a></td><td class="numi">1</td><td>1732021582355</td><td class="numi">36</td></tr><tr class="failedodd"><td><a href="#m16"><b>setup</b>  </a></td><td class="numi">1</td><td>1732021582355</td><td class="numi">36</td></tr>
+<tr><th colspan="5">BrowserStack Test &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="8">com.example.LocalGridBrowserNgTest</td><td><a href="#m17"><b>teardown</b>  </a></td><td class="numi">4</td><td>1732021582393</td><td class="numi">-1732021582393</td></tr><tr class="skippedodd"><td><a href="#m18"><b>teardown</b>  </a></td><td class="numi">4</td><td>1732021582393</td><td class="numi">-1732021582393</td></tr><tr class="skippedodd"><td><a href="#m19"><b>setup</b>  </a></td><td class="numi">3</td><td>1732021582393</td><td class="numi">-1732021582393</td></tr><tr class="skippedodd"><td><a href="#m20"><b>teardown</b>  </a></td><td class="numi">4</td><td>1732021582393</td><td class="numi">-1732021582393</td></tr><tr class="skippedodd"><td><a href="#m21"><b>setup</b>  </a></td><td class="numi">3</td><td>1732021582393</td><td class="numi">-1732021582393</td></tr><tr class="skippedodd"><td><a href="#m22"><b>setup</b>  </a></td><td class="numi">3</td><td>1732021582393</td><td class="numi">-1732021582393</td></tr><tr class="skippedodd"><td><a href="#m23"><b>setup</b>  </a></td><td class="numi">3</td><td>1732021582393</td><td class="numi">-1732021582393</td></tr><tr class="skippedodd"><td><a href="#m24"><b>teardown</b>  </a></td><td class="numi">4</td><td>1732021582393</td><td class="numi">-1732021582393</td></tr>
+<tr><th colspan="5">BrowserStack Test &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="4">com.example.LocalGridBrowserNgTest</td><td><a href="#m25"><b>fillShippingAddress</b>  </a></td><td class="numi">1</td><td>1732021582393</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m26"><b>proceedToCheckout</b>  </a></td><td class="numi">1</td><td>1732021582394</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m27"><b>addItemToCart</b>  </a></td><td class="numi">1</td><td>1732021582392</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m28"><b>loginAndPlaceOrder</b>  </a></td><td class="numi">1</td><td>1732021582393</td><td class="numi">0</td></tr>
+</table>
+<h1>Chrome Test</h1>
+<h2 id="m1">com.example.BrowserStackRemoteNgTest:loginAndPlaceOrder</h2>
+<div>
+<div class="stacktrace">org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been &quot;select&quot; but was &quot;div&quot;
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.1&apos;, java.version: &apos;23&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:46)
+	at com.example.BrowserStackRemoteNgTest.loginAndPlaceOrder(BrowserStackRemoteNgTest.java:93)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+... Removed 16 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m2">com.example.BrowserStackRemoteNgTest:fillShippingAddress</h2>
+<div>
+<div class="stacktrace">java.lang.Throwable: Method BrowserStackRemoteNgTest.fillShippingAddress()[pri:4, instance:com.example.BrowserStackRemoteNgTest@50b472aa] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+... Removed 9 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.example.BrowserStackRemoteNgTest:addItemToCart</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">com.example.BrowserStackRemoteNgTest:proceedToCheckout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Safari Test</h1>
+<h2 id="m5">com.example.BrowserStackRemoteNgTest:loginAndPlaceOrder</h2>
+<div>
+<div class="stacktrace">org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been &quot;select&quot; but was &quot;DIV&quot;
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.1&apos;, java.version: &apos;23&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:46)
+	at com.example.BrowserStackRemoteNgTest.loginAndPlaceOrder(BrowserStackRemoteNgTest.java:93)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+... Removed 16 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">com.example.BrowserStackRemoteNgTest:fillShippingAddress</h2>
+<div>
+<div class="stacktrace">java.lang.Throwable: Method BrowserStackRemoteNgTest.fillShippingAddress()[pri:4, instance:com.example.BrowserStackRemoteNgTest@59fd97a8] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+... Removed 9 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">com.example.BrowserStackRemoteNgTest:addItemToCart</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">com.example.BrowserStackRemoteNgTest:proceedToCheckout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>Firefox Test</h1>
+<h2 id="m9">com.example.BrowserStackRemoteNgTest:loginAndPlaceOrder</h2>
+<div>
+<div class="stacktrace">org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been &quot;select&quot; but was &quot;div&quot;
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.1&apos;, java.version: &apos;23&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:46)
+	at com.example.BrowserStackRemoteNgTest.loginAndPlaceOrder(BrowserStackRemoteNgTest.java:93)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+... Removed 16 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">com.example.BrowserStackRemoteNgTest:fillShippingAddress</h2>
+<div>
+<div class="stacktrace">java.lang.Throwable: Method BrowserStackRemoteNgTest.fillShippingAddress()[pri:4, instance:com.example.BrowserStackRemoteNgTest@40ef3420] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+... Removed 9 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">com.example.BrowserStackRemoteNgTest:proceedToCheckout</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">com.example.BrowserStackRemoteNgTest:addItemToCart</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>BrowserStack Test</h1>
+<h2 id="m13">com.example.LocalGridBrowserNgTest:setup</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>chrome</td>
+<td>true</td>
+</tr>
+<tr><td colspan="2">
+<div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;YashrajShrivastava-D24JG34XPX&apos;, ip: &apos;2401:4900:1f29:769:918d:e6c3:498:91a0%en0&apos;
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.1&apos;, java.version: &apos;23&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome}]}]
+Capabilities {browserName: chrome}
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:159)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:139)
+	at com.example.LocalGridBrowserNgTest.setup(LocalGridBrowserNgTest.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:4444
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:73)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:48)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:96)
+	at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:54)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	... 38 more
+Caused by: java.net.ConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:4444
+	at org.asynchttpclient.netty.channel.NettyConnectListener.onFailure(NettyConnectListener.java:179)
+	at org.asynchttpclient.netty.channel.NettyChannelConnector$1.onFailure(NettyChannelConnector.java:108)
+	at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:28)
+	at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:20)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:629)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:118)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:4444
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:1062)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+... Removed 33 stack frames</div>
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">com.example.LocalGridBrowserNgTest:teardown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">com.example.LocalGridBrowserNgTest:teardown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">com.example.LocalGridBrowserNgTest:teardown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">com.example.LocalGridBrowserNgTest:setup</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">com.example.LocalGridBrowserNgTest:setup</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">com.example.LocalGridBrowserNgTest:setup</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m20">com.example.LocalGridBrowserNgTest:teardown</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m21">com.example.LocalGridBrowserNgTest:fillShippingAddress</h2>
+<div>
+<div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;YashrajShrivastava-D24JG34XPX&apos;, ip: &apos;2401:4900:1f29:769:918d:e6c3:498:91a0%en0&apos;
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.1&apos;, java.version: &apos;23&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome}]}]
+Capabilities {browserName: chrome}
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:159)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:139)
+	at com.example.LocalGridBrowserNgTest.setup(LocalGridBrowserNgTest.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:4444
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:73)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:48)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:96)
+	at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:54)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	... 38 more
+Caused by: java.net.ConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:4444
+	at org.asynchttpclient.netty.channel.NettyConnectListener.onFailure(NettyConnectListener.java:179)
+	at org.asynchttpclient.netty.channel.NettyChannelConnector$1.onFailure(NettyChannelConnector.java:108)
+	at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:28)
+	at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:20)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:629)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:118)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:4444
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:1062)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+... Removed 33 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m22">com.example.LocalGridBrowserNgTest:proceedToCheckout</h2>
+<div>
+<div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;YashrajShrivastava-D24JG34XPX&apos;, ip: &apos;2401:4900:1f29:769:918d:e6c3:498:91a0%en0&apos;
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.1&apos;, java.version: &apos;23&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome}]}]
+Capabilities {browserName: chrome}
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:159)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:139)
+	at com.example.LocalGridBrowserNgTest.setup(LocalGridBrowserNgTest.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:4444
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:73)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:48)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:96)
+	at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:54)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	... 38 more
+Caused by: java.net.ConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:4444
+	at org.asynchttpclient.netty.channel.NettyConnectListener.onFailure(NettyConnectListener.java:179)
+	at org.asynchttpclient.netty.channel.NettyChannelConnector$1.onFailure(NettyChannelConnector.java:108)
+	at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:28)
+	at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:20)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:629)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:118)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:4444
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:1062)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+... Removed 33 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m23">com.example.LocalGridBrowserNgTest:addItemToCart</h2>
+<div>
+<div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;YashrajShrivastava-D24JG34XPX&apos;, ip: &apos;2401:4900:1f29:769:918d:e6c3:498:91a0%en0&apos;
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.1&apos;, java.version: &apos;23&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome}]}]
+Capabilities {browserName: chrome}
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:159)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:139)
+	at com.example.LocalGridBrowserNgTest.setup(LocalGridBrowserNgTest.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:4444
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:73)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:48)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:96)
+	at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:54)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	... 38 more
+Caused by: java.net.ConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:4444
+	at org.asynchttpclient.netty.channel.NettyConnectListener.onFailure(NettyConnectListener.java:179)
+	at org.asynchttpclient.netty.channel.NettyChannelConnector$1.onFailure(NettyChannelConnector.java:108)
+	at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:28)
+	at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:20)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:629)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:118)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:4444
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:1062)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+... Removed 33 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m24">com.example.LocalGridBrowserNgTest:loginAndPlaceOrder</h2>
+<div>
+<div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
+Host info: host: &apos;YashrajShrivastava-D24JG34XPX&apos;, ip: &apos;2401:4900:1f29:769:918d:e6c3:498:91a0%en0&apos;
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.1&apos;, java.version: &apos;23&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome}]}]
+Capabilities {browserName: chrome}
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:536)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:232)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:159)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:139)
+	at com.example.LocalGridBrowserNgTest.setup(LocalGridBrowserNgTest.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:4444
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:73)
+	at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
+	at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
+	at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:48)
+	at org.openqa.selenium.remote.http.netty.NettyClient.execute(NettyClient.java:96)
+	at org.openqa.selenium.remote.tracing.TracedHttpClient.execute(TracedHttpClient.java:54)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:96)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:68)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	... 38 more
+Caused by: java.net.ConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:4444
+	at org.asynchttpclient.netty.channel.NettyConnectListener.onFailure(NettyConnectListener.java:179)
+	at org.asynchttpclient.netty.channel.NettyChannelConnector$1.onFailure(NettyChannelConnector.java:108)
+	at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:28)
+	at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:20)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:629)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:118)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:4444
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:682)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:1062)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+... Removed 33 stack frames</div>
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>
